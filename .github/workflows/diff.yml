@@ -671,6 +671,9 @@ jobs:
   backfill27_commit:
     needs: backfill27_diff
     if: ${{ always() && github.event_name == 'workflow_dispatch' && inputs.backfill_27 == true }}
+    permissions:
+      contents: write
+      actions: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout diff repo
