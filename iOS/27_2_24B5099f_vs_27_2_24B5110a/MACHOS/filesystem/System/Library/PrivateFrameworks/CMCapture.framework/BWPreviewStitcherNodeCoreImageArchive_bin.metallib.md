@@ -1,0 +1,9 @@
+## BWPreviewStitcherNodeCoreImageArchive_bin.metallib
+
+> `/System/Library/PrivateFrameworks/CMCapture.framework/BWPreviewStitcherNodeCoreImageArchive_bin.metallib`
+
+### Same-size Content Changes
+
+- `__TEXT.__compute`
+- `__TEXT.__metallib`
+- `__TEXT.__reflection`

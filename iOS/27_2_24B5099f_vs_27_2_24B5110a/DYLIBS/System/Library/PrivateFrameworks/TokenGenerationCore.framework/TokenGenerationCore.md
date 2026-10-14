@@ -1,0 +1,105 @@
+## TokenGenerationCore
+
+> `/System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x321468` | `0x321708` | **`+0x2a0`** |
+| `__AUTH_CONST.__const` | `0x235a8` | `0x23820` | **`+0x278`** |
+| `__TEXT.__const` | `0x3c270` | `0x3c2f0` | **`+0x80`** |
+| `__TEXT.__cstring` | `0xc32d` | `0xc3ad` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x8690` | `0x86c8` | **`+0x38`** |
+| `__TEXT.__swift5_fieldmd` | `0xc458` | `0xc484` | **`+0x2c`** |
+| `__TEXT.__swift5_capture` | `0x88c` | `0x8ac` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x622c` | `0x624c` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xd090` | `0xd0a8` | **`+0x18`** |
+| `__DATA.__data` | `0x8130` | `0x8128` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x3304` | `0x330c` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xa872` | `0xa87a` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xee4` | `0xeec` | **`+0x8`** |
+
+### Other Changes
+
+```diff
+
+-307.12.0.1.2
++307.12.4.0.0
+
+-  Functions: 18012
+-  Symbols:   51005
+-  CStrings:  1340
++  Functions: 18021
++  Symbols:   51060
++  CStrings:  1342
+Symbols:
++ _$s15TokenGeneration6PromptV0aB4CoreE08RenderedC8FragmentOWOcTm
++ _$s19TokenGenerationCore011BeginPromptA0O7resolve8override17modelCatalogValue17conventionDefaultS2iSg_ypSgSitFZ
++ _$s19TokenGenerationCore011BeginPromptA0O7resolve8override17modelCatalogValue17conventionDefaultS2iSg_ypSgSitFZTf4nnnd_n
++ _$s19TokenGenerationCore011BeginPromptA0OMF
++ _$s19TokenGenerationCore011BeginPromptA0OMa
++ _$s19TokenGenerationCore011BeginPromptA0OMf
++ _$s19TokenGenerationCore011BeginPromptA0OMn
++ _$s19TokenGenerationCore011BeginPromptA0ON
++ _$s19TokenGenerationCore011BeginPromptA0OWV
++ _$s19TokenGenerationCore011BeginPromptA0Owet
++ _$s19TokenGenerationCore011BeginPromptA0Owst
++ _$s19TokenGenerationCore011BeginPromptA0Owug
++ _$s19TokenGenerationCore011BeginPromptA0Owui
++ _$s19TokenGenerationCore011BeginPromptA0Owup
++ _$s19TokenGenerationCore34PromptPreprocessingTemplateVersionO18afmCiderSpeechMtV1yA2CmFWC
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionV13buildTGPrompt5turns29continueFinalAssistantMessage0aB00D0VSayAI4TurnVG_SbtKF
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA010OverridingdefL0A2aDP08fallbackL0AA0defL0_pvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA010OverridingdefL0AAMc
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA010OverridingdefL0AAWP
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP010thoughtEndA0SSSgvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP011defaultStopA7StringsSaySSGvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP011defaultStopA7StringsSaySSGvgTWTv_r
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP012defaultBegindA2IDSivgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP012thoughtStartA0SSSgvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP018shouldPreferSingleA2Id8fragmentSb0aB00D0VAAE08RenderedD8FragmentO_tFTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP020defaultEndOfToolCallA0SSvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP021cacheableSystemPrefixD06locale10tokenTable23localizationOverrideMap0aB00D0V10Foundation6LocaleVSg_SDyAL07SpecialA0VypGSDyARSDyS2SGGtKFTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP022defaultStartOfToolCallA0SSvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP024substitutionTextForInputaN0SDyS2SGvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP025substitutionTextForOutputaN0SDyS2SGvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP027mergeSystemInstructionsIntoA5Table05tokenQ023localizationOverrideMap06systemO00vO20LocalizationSuffixesSDy0D3Kit07SpecialA0VSSGAG_SDyAMSDyS2SGGAHtAN_ApOSDySSAOGtFTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP07defaultA5TableSDyS2SGvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP07turnEndA0SSSgvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP09turnStartA0SSSgvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP12toolRendererAA13ToolRendering_pvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP13buildTGPrompt5turns29continueFinalAssistantMessage0aB00D0VSayAK4TurnVG_SbtKFTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP17jsonGrammarFormatAA010JSONObjectO0OvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP17toolCallConverterAA04ToolnO0_pSgvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP19rendersTurnWrappersSbvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP19supportsContextRoleSbvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP19thoughtGrammarRulesSayAA4RuleVGSgvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP23supportedThoughtBudgetsShy0D3Kit0N6BudgetOGvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP24processRenderedFragments08rendereddO028imageStartAndEndPlaceholders05audiorstU0Say0aB00D0VAAE0nD8FragmentOGAO_SS5start_SS3endtSgARtKFTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP24toolCallingSpecialTokensSaySSGvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP24toolCallingSpecialTokensSaySSGvgTWTv_r
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP25alwaysAllowsThoughtTokensSbvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP25supportsMixedToolResponseSbvgTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP8tokenize07modularD8Fragment9tokenizer23useParallelTokenizationSaySiGSS_AA015TokenizerRunnerT0_pSbtKFTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0A2aDP8tokenize_9tokenizer23useParallelTokenizationSaySiGSS_AA015TokenizerRunnerR0_pSbtKFTW
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0AAMc
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVAA0defL0AAWP
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVMF
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVMa
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVMf
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVMn
++ _$s19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionVN
++ _$sSD8_VariantV11removeValue6forKeyq_Sgx_tFSS_SSTg5
++ ___swift_exist.box.addr_destructor.44Tm
++ _symbolic _____ 19TokenGenerationCore011BeginPromptA0O
++ _symbolic _____ 19TokenGenerationCore55PromptPreprocessingTemplateAfmCiderSpeechMtV1ConventionV
+- _$ss23_ContiguousArrayStorageCfDySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztc_Tg5
+- _$syycMR
+- _$syycMd
+- ___swift_exist.box.addr_destructor.43Tm
+- _symbolic yyc
+CStrings:
++ "afm_cider_speech_mt_v1"
++ "afm_cider_speech_mt_v1 renders no turn wrappers and has no cacheable system prefix"
+```

@@ -1,0 +1,28 @@
+## WiFiCloudAssetsXPCService
+
+> `/System/Library/PrivateFrameworks/WiFiPolicy.framework/XPCServices/WiFiCloudAssetsXPCService.xpc/WiFiCloudAssetsXPCService`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x1601` | `0x164b` | **`+0x4a`** |
+| `__DATA_CONST.__cfstring` | `0x1900` | `0x1940` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x12f0` | `0x1330` | **`+0x40`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
+
+```diff
+
+-  CStrings:  480
++  CStrings:  482
+CStrings:
++ "9adbf9f2-0adf-4a37-9ecc-bee59e9a19eb"
++ "bebc09db-45a4-43df-a45c-47a4f832c7e7"
+```

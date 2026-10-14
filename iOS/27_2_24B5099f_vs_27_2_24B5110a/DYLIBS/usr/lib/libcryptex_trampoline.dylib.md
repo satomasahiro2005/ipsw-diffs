@@ -1,0 +1,17 @@
+## libcryptex_trampoline.dylib
+
+> `/usr/lib/libcryptex_trampoline.dylib`
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
+CStrings:
++ "@(#)VERSION:Monitor Cryptex Upgrades Version 2.0.0: Sat Oct  3 22:20:33 PDT 2026; root:libcryptex-761.40.23~885/libcryptex_trampoline/RELEASE_ARM64E"
++ "Monitor Cryptex Upgrades Version 2.0.0: Sat Oct  3 22:20:33 PDT 2026; root:libcryptex-761.40.23~885/libcryptex_trampoline/RELEASE_ARM64E"
+- "@(#)VERSION:Monitor Cryptex Upgrades Version 2.0.0: Sat Sep 26 05:08:43 PDT 2026; root:libcryptex-761.40.23~716/libcryptex_trampoline/RELEASE_ARM64E"
+- "Monitor Cryptex Upgrades Version 2.0.0: Sat Sep 26 05:08:43 PDT 2026; root:libcryptex-761.40.23~716/libcryptex_trampoline/RELEASE_ARM64E"
+```

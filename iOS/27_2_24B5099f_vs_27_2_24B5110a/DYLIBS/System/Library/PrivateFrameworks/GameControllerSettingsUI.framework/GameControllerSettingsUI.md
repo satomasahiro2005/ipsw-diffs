@@ -1,0 +1,130 @@
+## GameControllerSettingsUI
+
+> `/System/Library/PrivateFrameworks/GameControllerSettingsUI.framework/GameControllerSettingsUI`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cb20c` | `0x1cbaa4` | **`+0x898`** |
+| `__DATA.__data` | `0x48c0` | `0x4988` | **`+0xc8`** |
+| `__TEXT.__unwind_info` | `0x5ef8` | `0x5f38` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xdc0` | `0xdf0` | **`+0x30`** |
+
+### Other Changes
+
+```diff
+
+-  Functions: 8536
+-  Symbols:   22119
++  Functions: 8558
++  Symbols:   22170
+Symbols:
++ _$s7SwiftUI12_FrameLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI12_FrameLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI12_FrameLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI12_ScaleEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI12_ScaleEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI12_ScaleEffectVAcA12ViewModifierAAWl
++ _$s7SwiftUI12_ScaleEffectVN
++ _$s7SwiftUI13AnyShapeStyleVAA0dE0AAMc
++ _$s7SwiftUI13AnyShapeStyleVAcA0dE0AAWL
++ _$s7SwiftUI13AnyShapeStyleVAcA0dE0AAWl
++ _$s7SwiftUI13_OffsetEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI13_OffsetEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI13_OffsetEffectVAcA12ViewModifierAAWl
++ _$s7SwiftUI13_OffsetEffectVN
++ _$s7SwiftUI13_ShadowEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI13_ShadowEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI13_ShadowEffectVAcA12ViewModifierAAWl
++ _$s7SwiftUI13_ShadowEffectVN
++ _$s7SwiftUI14FillShapeStyleVAA0dE0AAMc
++ _$s7SwiftUI14FillShapeStyleVAcA0dE0AAWL
++ _$s7SwiftUI14FillShapeStyleVAcA0dE0AAWl
++ _$s7SwiftUI14TintShapeStyleVAA0dE0AAMc
++ _$s7SwiftUI14TintShapeStyleVAcA0dE0AAWL
++ _$s7SwiftUI14_OpacityEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI14_OpacityEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI14_OpacityEffectVAcA12ViewModifierAAWl
++ _$s7SwiftUI14_PaddingLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI14_PaddingLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI14_PaddingLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI15ModifiedContentVyAA5GroupVyAA012_ConditionalD0VyAA6HStackVyAA05TupleD0VyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGG_AA4TextVQPGGAXGGAA016_ForegroundStyleM0VyAA017HierarchicalShapeQ0VGGACyxq_GAA4ViewA2AA6_RzAA0tM0R_rlWlTm
++ _$s7SwiftUI15ModifiedContentVyACyACyACyAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA07ToolbarD0Rd__lFQOyACyAA6VStackVyAA05TupleD0VyAJyALyAA4TextVSg_AA9LazyVGridVyAA7ForEachVySaySSGSSACyAeAE11buttonStyleyQrqd__AA015PrimitiveButtonQ0Rd__lFQOyAA0S0Vy022GameControllerSettingsB0011SystemColorE0VG_AA010BorderlesssQ0VQo_AA31AccessibilityAttachmentModifierVGGGQPGG_ACyAJyALyAO_AQyASyATSSAeAEAUyQrqd__AaVRd__lFQOyAXyAY0w5ImageE0VG_A2_Qo_GGQPGGAA14_PaddingLayoutVGQPGGA20_G_AA0H4ItemVyytACyAXyANGAA32_EnvironmentKeyTransformModifierVySbGGGQo_AA011_BackgroundQ8ModifierVyAA0X0VGGAA11_ClipEffectVyAA16RoundedRectangleVGGA20_GA20_GACyxq_GAad2aDRzAA0E8ModifierR_rlWl
++ _$s7SwiftUI15_PositionLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI15_PositionLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI15_PositionLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI15_RotationEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI15_RotationEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI15_RotationEffectVAcA12ViewModifierAAWl
++ _$s7SwiftUI16_FixedSizeLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI16_FixedSizeLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI16_FixedSizeLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI16_FlexFrameLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI16_FlexFrameLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI16_FlexFrameLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI18_AspectRatioLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI18_AspectRatioLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI18_AspectRatioLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI18_AspectRatioLayoutVN
++ _$s7SwiftUI19AccessibilityTraitsVACs10SetAlgebraAAWlTm
++ _$s7SwiftUI22HierarchicalShapeStyleVAA0dE0AAMc
++ _$s7SwiftUI22HierarchicalShapeStyleVAcA0dE0AAWL
++ _$s7SwiftUI22HierarchicalShapeStyleVAcA0dE0AAWl
++ _$s7SwiftUI25_AllowsHitTestingModifierVAA04ViewF0AAMc
++ _$s7SwiftUI25_AllowsHitTestingModifierVAcA04ViewF0AAWL
++ _$s7SwiftUI25_AllowsHitTestingModifierVAcA04ViewF0AAWl
++ _$s7SwiftUI25_AppearanceActionModifierVAA04ViewE0AAMc
++ _$s7SwiftUI25_AppearanceActionModifierVAcA04ViewE0AAWL
++ _$s7SwiftUI25_AppearanceActionModifierVAcA04ViewE0AAWl
++ _$s7SwiftUI4TextVAA4ViewAAMc
++ _$s7SwiftUI4TextVAcA4ViewAAWL
++ _$s7SwiftUI4TextVAcA4ViewAAWl
++ _$s7SwiftUI5ColorVAA10ShapeStyleAAMc
++ _$s7SwiftUI5ColorVAA4ViewAAMc
++ _$s7SwiftUI5ColorVAcA10ShapeStyleAAWL
++ _$s7SwiftUI5ColorVAcA10ShapeStyleAAWl
++ _$s7SwiftUI5ColorVAcA4ViewAAWL
++ _$s7SwiftUI5ColorVAcA4ViewAAWl
++ _$s7SwiftUI5ImageVAA4ViewAAMc
++ _$s7SwiftUI5ImageVAcA4ViewAAWL
++ _$s7SwiftUI5ImageVAcA4ViewAAWl
++ _$s7SwiftUI6SpacerVAA4ViewAAMc
++ _$s7SwiftUI6SpacerVAcA4ViewAAWL
++ _$s7SwiftUI6SpacerVAcA4ViewAAWl
++ _$s7SwiftUI6SpacerVN
++ _$s7SwiftUI9EmptyViewVAA0D0AAMc
++ _$s7SwiftUI9EmptyViewVAcA0D0AAWL
++ _$s7SwiftUI9EmptyViewVAcA0D0AAWl
++ _$ss5NeverO7SwiftUI4ViewACMc
++ _$ss5NeverOAB7SwiftUI4ViewACWL
++ _$ss5NeverOAB7SwiftUI4ViewACWl
+- _$s7SwiftUI12_FrameLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI12_ScaleEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI13AnyShapeStyleVAA0dE0AAWP
+- _$s7SwiftUI13_OffsetEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI13_ShadowEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI14FillShapeStyleVAA0dE0AAWP
+- _$s7SwiftUI14TintShapeStyleVAA0dE0AAWP
+- _$s7SwiftUI14_OpacityEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI14_PaddingLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI15ModifiedContentVyAA5GroupVyAA012_ConditionalD0VyAA6HStackVyAA05TupleD0VyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGG_AA4TextVQPGGAXGGAA016_ForegroundStyleM0VyAA017HierarchicalShapeQ0VGGACyxq_GAA4ViewA2AA6_RzAA0tM0R_rlWl
+- _$s7SwiftUI15ModifiedContentVyAA5ImageVAA24_ForegroundStyleModifierVyAA017HierarchicalShapeG0VGGACyxq_GAA4ViewA2aMRzAA0kH0R_rlWl
+- _$s7SwiftUI15ModifiedContentVyACyACyAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA07ToolbarD0Rd__lFQOyACyAA6VStackVyAA05TupleD0VyAJyALyAA4TextVSg_AA9LazyVGridVyAA7ForEachVySaySSGSSACyAeAE11buttonStyleyQrqd__AA015PrimitiveButtonQ0Rd__lFQOyAA0S0Vy022GameControllerSettingsB0011SystemColorE0VG_AA010BorderlesssQ0VQo_AA31AccessibilityAttachmentModifierVGGGQPGG_ACyAJyALyAO_AQyASyATSSAeAEAUyQrqd__AaVRd__lFQOyAXyAY0w5ImageE0VG_A2_Qo_GGQPGGAA14_PaddingLayoutVGQPGGA20_G_AA0H4ItemVyytACyAXyANGAA32_EnvironmentKeyTransformModifierVySbGGGQo_AA011_BackgroundQ8ModifierVyAA0X0VGGAA11_ClipEffectVyAA16RoundedRectangleVGGA20_GACyxq_GAad2aDRzAA0E8ModifierR_rlWlTm
+- _$s7SwiftUI15_PositionLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI15_RotationEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI16_FixedSizeLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI16_FlexFrameLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI18_AspectRatioLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI19AccessibilityTraitsVACs10SetAlgebraAAWl
+- _$s7SwiftUI22HierarchicalShapeStyleVAA0dE0AAWP
+- _$s7SwiftUI25_AllowsHitTestingModifierVAA04ViewF0AAWP
+- _$s7SwiftUI25_AppearanceActionModifierVAA04ViewE0AAWP
+- _$s7SwiftUI4TextVAA4ViewAAWP
+- _$s7SwiftUI5ColorVAA10ShapeStyleAAWP
+- _$s7SwiftUI5ColorVAA4ViewAAWP
+- _$s7SwiftUI5ImageVAA4ViewAAWP
+- _$s7SwiftUI6SpacerVAA4ViewAAWP
+- _$s7SwiftUI9EmptyViewVAA0D0AAWP
+- _$ss5NeverO7SwiftUI4ViewACWP
+```

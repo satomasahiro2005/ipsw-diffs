@@ -1,0 +1,75 @@
+## GeoUIFramework
+
+> `/System/Library/PrivateFrameworks/GeoUIFramework.framework/GeoUIFramework`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2def4` | `0x2e470` | **`+0x57c`** |
+| `__DATA.__data` | `0x1148` | `0x1198` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x941` | `0x961` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xd58` | `0xd60` | **`+0x8`** |
+
+### Other Changes
+
+```diff
+
+-  Functions: 1377
+-  Symbols:   4322
+-  CStrings:  76
++  Functions: 1388
++  Symbols:   4344
++  CStrings:  77
+Symbols:
++ _$s14GeoUIFramework21SinglePlaceInformViewV25secondaryButtonBackground33_7452851A631EF7A3D73772B08B86E6E0LL7SwiftUI13AnyShapeStyleVvg
++ _$s7SwiftUI14_PaddingLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI14_PaddingLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI14_PaddingLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI15ModifiedContentVyAA012_ConditionalD0VyAEyAEyAA6HStackVyAA05TupleD0VyACyACyAA4ViewPAAE11buttonStyleyQrqd__AA06ButtonJ0Rd__lFQOyAA0K0VyAA5LabelVyAA4TextVACyAA5ImageVAA14_PaddingLayoutVGSgGG_07SnippetB00k4ItemkJ0VQo_AA34_InsettableBackgroundShapeModifierVyAA03AnyuJ0VAA7CapsuleVGGAA010_FlexFrameP0VG_ACyA3_A13_GQPGGA15_GA15_GSgA15_GSgAWGACyxq_GAaj2aJRzAA0hV0R_rlWl
++ _$s7SwiftUI15ModifiedContentVyACyAA4ViewP07SnippetB0E34overrideComponentHorizontalPaddingyQrAF06CustomihJ0OFQOyACyAeFE30componentLeadingImageAlignmentyQrAF0hmnO0OFQOyAF22VisualResponseProviderC4view3for7contextQrSaySo13SFCardSectionCG_AF7ContextCtFZQOy_Qo__Qo_AA30_EnvironmentKeyWritingModifierVySbGG_Qo_AA01_J6LayoutVGA3_GACyxq_GAad2aDRzAA0E8ModifierR_rlWl
++ _$s7SwiftUI15ModifiedContentVyACyACyACyACyACyAA4ViewP07SnippetB0E34overrideComponentHorizontalPaddingyQrAF06CustomihJ0OFQOyACyAeFE30componentLeadingImageAlignmentyQrAF0hmnO0OFQOyAF22VisualResponseProviderC4view3for7contextQrSaySo13SFCardSectionCG_AF7ContextCtFZQOy_Qo__Qo_AA30_EnvironmentKeyWritingModifierVySbGG_Qo_AA01_J6LayoutVGA3_GAA34_InsettableBackgroundShapeModifierVyAA8MaterialVAA16RoundedRectangleVGGAA19_BackgroundModifierVyAA14GeometryReaderVyACyAA5ColorVAA26_PreferenceWritingModifierVy14GeoUIFramework023PlatterHeightPreferenceZ033_7452851A631EF7A3D73772B08B86E6E0LLVGGGGGA3_GA3_GACyxq_GAad2aDRzAA0E8ModifierR_rlWl
++ _$s7SwiftUI16_FlexFrameLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI16_FlexFrameLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI16_FlexFrameLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI22HierarchicalShapeStyleVAA0dE0AAMc
++ _$s7SwiftUI22HierarchicalShapeStyleVAcA0dE0AAWL
++ _$s7SwiftUI22HierarchicalShapeStyleVAcA0dE0AAWl
++ _$s7SwiftUI4TextV07SnippetB018AnyViewConvertibleADMc
++ _$s7SwiftUI4TextVAA4ViewAAMc
++ _$s7SwiftUI4TextVAC07SnippetB018AnyViewConvertibleADWL
++ _$s7SwiftUI4TextVAC07SnippetB018AnyViewConvertibleADWl
++ _$s7SwiftUI4TextVAcA4ViewAAWL
++ _$s7SwiftUI4TextVAcA4ViewAAWl
++ _$s7SwiftUI5ColorVAA10ShapeStyleAAMc
++ _$s7SwiftUI5ColorVAcA10ShapeStyleAAWL
++ _$s7SwiftUI5ColorVAcA10ShapeStyleAAWl
++ _$s7SwiftUI5ImageVAA4ViewAAMc
++ _$s7SwiftUI5ImageVAcA4ViewAAWL
++ _$s7SwiftUI5ImageVAcA4ViewAAWl
++ _$s7SwiftUI6SpacerVAA4ViewAAMc
++ _$s7SwiftUI6SpacerVAcA4ViewAAWL
++ _$s7SwiftUI6SpacerVAcA4ViewAAWl
++ _$s7SwiftUI6SpacerVN
++ _$s7SwiftUI8MaterialVAA10ShapeStyleAAMc
++ _$s7SwiftUI8MaterialVAcA10ShapeStyleAAWL
++ _$s7SwiftUI8MaterialVAcA10ShapeStyleAAWlTm
++ _$s7SwiftUI9EmptyViewVAA0D0AAMc
++ _$s7SwiftUI9EmptyViewVAcA0D0AAWL
++ _$s7SwiftUI9EmptyViewVAcA0D0AAWl
+- _$s7SwiftUI14_PaddingLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI15ModifiedContentVyAA012_ConditionalD0VyAEyAEyAA6HStackVyAA05TupleD0VyACyACyAA4ViewPAAE11buttonStyleyQrqd__AA06ButtonJ0Rd__lFQOyAA0K0VyAA5LabelVyAA4TextVACyAA5ImageVAA14_PaddingLayoutVGSgGG_07SnippetB00k4ItemkJ0VQo_AA34_InsettableBackgroundShapeModifierVyAA03AnyuJ0VAA7CapsuleVGGAA010_FlexFrameP0VG_ACyA3_A13_GQPGGA15_GA15_GSgA15_GSgAWGACyxq_GAaj2aJRzAA0hV0R_rlWlTm
+- _$s7SwiftUI16RoundedRectangleVAcA15InsettableShapeAAWl
+- _$s7SwiftUI16_FlexFrameLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI19_ConditionalContentVyACyACyAA6HStackVyAA05TupleD0VyAA08ModifiedD0VyAIyAA4ViewPAAE11buttonStyleyQrqd__AA06ButtonJ0Rd__lFQOyAA0K0VyAA5LabelVyAA4TextVAIyAA5ImageVAA14_PaddingLayoutVGSgGG_07SnippetB00k4ItemkJ0VQo_AA34_InsettableBackgroundShapeModifierVyAA03AnyuJ0VAA7CapsuleVGGAA010_FlexFrameP0VG_AIyA3_A13_GQPGGA15_GA15_GSgA15_GSgxSgAaj2aJRzlWl
+- _$s7SwiftUI22HierarchicalShapeStyleVAA0dE0AAWP
+- _$s7SwiftUI4TextV07SnippetB018AnyViewConvertibleADWP
+- _$s7SwiftUI4TextVAA4ViewAAWP
+- _$s7SwiftUI5ColorVAA10ShapeStyleAAWP
+- _$s7SwiftUI5ImageVAA4ViewAAWP
+- _$s7SwiftUI6SpacerVAA4ViewAAWP
+- _$s7SwiftUI8MaterialVAA10ShapeStyleAAWP
+- _$s7SwiftUI9EmptyViewVAA0D0AAWP
+CStrings:
++ "com.apple.mobilesafari"
+```

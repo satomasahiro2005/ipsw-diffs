@@ -1,0 +1,15 @@
+## launchd_cache_loader
+
+> `/usr/libexec/launchd_cache_loader`
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-3298.40.28.0.0
++3298.42.1.0.0
+```

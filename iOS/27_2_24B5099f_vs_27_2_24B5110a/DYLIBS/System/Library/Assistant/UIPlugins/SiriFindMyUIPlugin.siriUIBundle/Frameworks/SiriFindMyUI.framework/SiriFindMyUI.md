@@ -1,0 +1,31 @@
+## SiriFindMyUI
+
+> `/System/Library/Assistant/UIPlugins/SiriFindMyUIPlugin.siriUIBundle/Frameworks/SiriFindMyUI.framework/SiriFindMyUI`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x531c4` | `0x53990` | **`+0x7cc`** |
+| `__DATA.__data` | `0x2480` | `0x24f8` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x1670` | `0x16b0` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xcd8` | `0xd08` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x1a10` | `0x1a20` | **`+0x10`** |
+
+### Other Changes
+
+```diff
+
+-3605.18.1.0.0
++3605.19.1.0.0
+
+-  Functions: 2289
++  Functions: 2311
+Symbols:
++ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE12onTapGesture5count7performQrSi_yyctFQOyAA5GroupVyAA012_ConditionalD0Vy010SiriFindMyB00nO17AmbientMapSnippetVAM0noq8StandardR0VGG_Qo_AA16_OverlayModifierVyACyACyACyACyAA4TextVAA14_PaddingLayoutVGAZGAA026_InsettableBackgroundShapeU0VyAA8MaterialVAA7CapsuleVGGAZGGGAVyACyACyAeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAA5ImageVG_AA19BorderedButtonStyleVQo_AA11_ClipEffectVyAA6CircleVGGAZGSgGGAaDHPA11_AaDHPqd__AaDHD2_ATHO_A10_AA0eU0HPyHCHC_A30_AAA32_HPyHCHC
++ _symbolic _____yAAy_____y_____y_____y__________GG_Qo______yAAyAAyAAyAAy__________GAKG_____y__________GGAKGGGAIyAAyAAy_____y_____y_____G______Qo______y_____GGAKGSgGG 7SwiftUI15ModifiedContentV AA4ViewPAAE12onTapGesture5count7performQrSi_yyctFQO AA5GroupV AA012_ConditionalD0V 010SiriFindMyB00nO17AmbientMapSnippetV AM0noq8StandardR0V AA16_OverlayModifierV AA4TextV AA14_PaddingLayoutV AA026_InsettableBackgroundShapeU0V AA8MaterialV AA7CapsuleV AeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AA6ButtonV AA5ImageV AA19BorderedButtonStyleV AA11_ClipEffectV AA6CircleV
++ _symbolic _____y_____yABy_____y_____y_____G______Qo______y_____GG_____GSgG 7SwiftUI16_OverlayModifierV AA15ModifiedContentV AA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonI0Rd__lFQO AA0K0V AA5ImageV AA08BorderedkI0V AA11_ClipEffectV AA6CircleV AA14_PaddingLayoutV
+- _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE12onTapGesture5count7performQrSi_yyctFQOyAA5GroupVyAA012_ConditionalD0Vy010SiriFindMyB00nO17AmbientMapSnippetVAM0noq8StandardR0VGG_Qo_AA16_OverlayModifierVyACyACyACyACyAA4TextVAA14_PaddingLayoutVGAZGAA026_InsettableBackgroundShapeU0VyAA8MaterialVAA7CapsuleVGGAZGGGAVyACyACyAeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAA5ImageVG_AA19BorderedButtonStyleVQo_AA11_ClipEffectVyAA6CircleVGGAZGGGAaDHPA11_AaDHPqd__AaDHD2_ATHO_A10_AA0eU0HPyHCHC_A29_AAA31_HPyHCHC
+- _symbolic _____yAAy_____y_____y_____y__________GG_Qo______yAAyAAyAAyAAy__________GAKG_____y__________GGAKGGGAIyAAyAAy_____y_____y_____G______Qo______y_____GGAKGGG 7SwiftUI15ModifiedContentV AA4ViewPAAE12onTapGesture5count7performQrSi_yyctFQO AA5GroupV AA012_ConditionalD0V 010SiriFindMyB00nO17AmbientMapSnippetV AM0noq8StandardR0V AA16_OverlayModifierV AA4TextV AA14_PaddingLayoutV AA026_InsettableBackgroundShapeU0V AA8MaterialV AA7CapsuleV AeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AA6ButtonV AA5ImageV AA19BorderedButtonStyleV AA11_ClipEffectV AA6CircleV
+- _symbolic _____y_____yABy_____y_____y_____G______Qo______y_____GG_____GG 7SwiftUI16_OverlayModifierV AA15ModifiedContentV AA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonI0Rd__lFQO AA0K0V AA5ImageV AA08BorderedkI0V AA11_ClipEffectV AA6CircleV AA14_PaddingLayoutV
+```

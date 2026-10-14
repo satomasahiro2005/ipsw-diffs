@@ -1,0 +1,16 @@
+## distnoted
+
+> `/usr/sbin/distnoted`
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+- `__TEXT.__dof_distnoted`
+
+### Other Changes
+
+```diff
+
+-5027.1.7.0.0
++5027.1.8.0.0
+```

@@ -1,0 +1,107 @@
+## SiriInformationSearch
+
+> `/System/Library/PrivateFrameworks/SiriInformationSearch.framework/SiriInformationSearch`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27cbac` | `0x27f3d4` | **`+0x2828`** |
+| `__TEXT.__oslogstring` | `0x12d1b` | `0x12edb` | **`+0x1c0`** |
+| `__TEXT.__const` | `0xb2fc` | `0xb34c` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x6f51` | `0x6fa1` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x5008` | `0x5048` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x4298` | `0x42d0` | **`+0x38`** |
+| `__DATA.__data` | `0x1b50` | `0x1b80` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x7890` | `0x78c0` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0x7fc0` | `0x7fd0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x5600` | `0x5608` | **`+0x8`** |
+
+### Other Changes
+
+```diff
+
+-3605.24.1.0.0
++3605.24.1.11.2
+
+-  Functions: 8704
+-  Symbols:   21964
+-  CStrings:  1838
++  Functions: 8712
++  Symbols:   22007
++  CStrings:  1843
+Symbols:
++ _$s10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataVMa
++ _$s10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataVMn
++ _$s10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataVSgMR
++ _$s10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataVSgMd
++ _$s10PegasusAPI30Useragentpb_DeviceCapabilitiesV9isPumpkinSbvs
++ _$s10PegasusAPI47Apple_Parsec_Sam_V1alpha_SAMBatchSearchResponseV12DomainResultV12hasAppIntentSbvg
++ _$s10PegasusAPI47Apple_Parsec_Sam_V1alpha_SAMBatchSearchResponseV12DomainResultV9appIntentAA0c1_d14_Siri_V2alpha_a3AppM4DataVvg
++ _$s13SiriUtilities12ResponseModeV8aceValueSSvg
++ _$s20SiriInformationTypes10DeviceTypeO13homeAccessoryyA2CmFWC
++ _$s20SiriInformationTypes10DeviceTypeOACSHAAWL
++ _$s20SiriInformationTypes10DeviceTypeOACSQAAWL
++ _$s20SiriInformationTypes10DeviceTypeOMn
++ _$s20SiriInformationTypes10DeviceTypeOSHAAMc
++ _$s20SiriInformationTypes10DeviceTypeOSQAAMc
++ _$s20SiriInformationTypes19PommesBatchResponseV4ItemV7queryID10domainName9succeeded7results6uiView12searchDialog0H8Metadata09multiUserF7Context9appIntent5errorAESS_SSSbSay10PegasusAPI41Apple_Parsec_Sam_V1alpha_SAMPegasusResultVGAP34Apple_Parsec_Sam_V1alpha_SAMUIViewVSgAP034Apple_Parsec_Sam_V1alpha_SAMSearchQ0VSgAP033Apple_Parsec_Sam_V1alpha_SAMQueryR0VSgAP013Apple_Parsec_a14_V2alpha_MultitfU0VSgAP013Apple_Parsec_a9_V2alpha_y3AppW4DataVSgAE0eG5ErrorVSgtcfC
++ _$s21SiriInformationSearch06PommesC7RequestV19isRemoteTVOSRequestSbvg
++ _$s21SiriInformationSearch06PommesC7RequestV19isRemoteTVOSRequestSbvpMV
++ _$s21SiriInformationSearch17AMPUserStateUtilsO26createAMPUsersStatesForSAM09mediaUserI010resolution16isPostResolution03muxM4Info11homeMembersSay10PegasusAPI013Apple_Parsec_a12_V2alpha_AmpmE0VGSgSayAA05MediamE0_pG_AJ0x1_y1_a1_z18_ProfileSliceValueqE0OSbSayAA07MUXUserS0VGSay22IntelligenceFlowShared0M0VGtFZALSgAaO_pXEfU_
++ _$s22IntelligenceFlowShared13MediaUserInfoV13alternateDSIDSSSgvg
++ _$s22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomO13homeAccessoryyA2GmFWC
++ _$s22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomOAGSQAAWL
++ _$s22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomOMa
++ _$s22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomOMn
++ _$s22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomOSQAAMc
++ _$s22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomOSgMR
++ _$s22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomOSgMd
++ _$s22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomOSg_AHtMR
++ _$s22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomOSg_AHtMd
++ _$s22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11deviceIdiomAE06DeviceI0OSgvg
++ _$sSh21_nonEmptyArrayLiteralShyxGSayxG_tcfC20SiriInformationTypes10DeviceTypeO_Tt0g5Tf4g_n
++ _$sSh8_VariantV6insertySb8inserted_x17memberAfterInserttxnF20SiriInformationTypes10DeviceTypeO_Tg5
++ _$sSh8containsySbxF20SiriInformationTypes10DeviceTypeO_Tg5
++ _$ss10_NativeSetV13copyAndResize8capacityySi_tF20SiriInformationTypes10DeviceTypeO_Tg5
++ _$ss10_NativeSetV4copyyyF20SiriInformationTypes10DeviceTypeO_Tg5Tm
++ _$ss10_NativeSetV6resize8capacityySi_tF20SiriInformationTypes10DeviceTypeO_Tg5
++ _$ss10_NativeSetV9insertNew_2at8isUniqueyxn_s10_HashTableV6BucketVSbtF20SiriInformationTypes10DeviceTypeO_Tg5
++ _$ss11_SetStorageCy20SiriInformationTypes10DeviceTypeOGMR
++ _$ss11_SetStorageCy20SiriInformationTypes10DeviceTypeOGMd
++ _$ss23_ContiguousArrayStorageCy20SiriInformationTypes10DeviceTypeOGMR
++ _$ss23_ContiguousArrayStorageCy20SiriInformationTypes10DeviceTypeOGMd
++ _symbolic _____Sg 10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataV
++ _symbolic _____Sg 22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomO
++ _symbolic _____Sg_ABt 22IntelligenceFlowShared17StructuredContextV011SiriRequestE0V11DeviceIdiomO
++ _symbolic _____y_____G s11_SetStorageC 20SiriInformationTypes10DeviceTypeO
++ _symbolic _____y_____G s23_ContiguousArrayStorageC 20SiriInformationTypes10DeviceTypeO
+- _$s20SiriInformationTypes19PommesBatchResponseV4ItemV7queryID10domainName9succeeded7results6uiView12searchDialog0H8Metadata09multiUserF7Context5errorAESS_SSSbSay10PegasusAPI41Apple_Parsec_Sam_V1alpha_SAMPegasusResultVGAO0y1_Z22_Sam_V1alpha_SAMUIViewVSgAO0y1_z22_Sam_V1alpha_SAMSearchQ0VSgAO0y1_z21_Sam_V1alpha_SAMQueryR0VSgAO0y1_z1_a14_V2alpha_MultitfU0VSgAE0eG5ErrorVSgtcfC
+- _$ss10_NativeSetV4copyyyF10PegasusAPI43Apple_Parsec_Siri_V2alpha_ProfileSliceLabelO_Tg5Tm
+Functions:
+~ _$s21SiriInformationSearch20PommesRequestContextC4fromAC22IntelligenceFlowShared010StructuredF0V0aeF0V_tcfcyAC7BuilderVzXEfU_ : 1116 -> 2372
+~ _$s21SiriInformationSearch25SAMSearchRequestProcessorC21triageRefreshRequests33_2185A88BCEA4983DD84272B90FEFD1E1LLyAC0H6ActionAELLOSay10PegasusAPI045Apple_Parsec_Sam_V1alpha_FetchableDeviceStatehE0VGKF : 2916 -> 4004
+~ _$s21SiriInformationSearch19DataProviderManagerC14addSAMAmpState33_025996E41686C8D59143D5DC4568B6E8LL2to13searchRequesty10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchS0Vz_AA06PommescS0VtF : 3828 -> 4396
+~ _$s10PegasusAPI020Apple_Parsec_Search_A12QueryContextV015SiriInformationE0E5build3for12withLocation19dataProviderManagerAcD06PommesE7RequestV_So10CLLocationCSgAD04DataoP0CtFZyAA29Useragentpb_OriginatingDeviceVzXEfU8_yAA0U10_UserAgentVzXEfU_ : 1520 -> 1332
+~ _$s10PegasusAPI20Useragentpb_PlatformO21SiriInformationSearchE4from10deviceTypeACSg0eF5Types06DeviceJ0O_tFZ : 496 -> 516
++ _$sSh8containsySbxF10PegasusAPI43Apple_Parsec_Siri_V2alpha_ProfileSliceLabelO_Tg5
++ _$ss10_NativeSetV6resize8capacityySi_tF10PegasusAPI43Apple_Parsec_Siri_V2alpha_ProfileSliceLabelO_Tg5
++ _$sSh8_VariantV6insertySb8inserted_x17memberAfterInserttxnF10PegasusAPI43Apple_Parsec_Siri_V2alpha_ProfileSliceLabelO_Tg5
++ _$ss10_NativeSetV9insertNew_2at8isUniqueyxn_s10_HashTableV6BucketVSbtF10PegasusAPI43Apple_Parsec_Siri_V2alpha_ProfileSliceLabelO_Tg5
++ _$ss10_NativeSetV13copyAndResize8capacityySi_tF10PegasusAPI43Apple_Parsec_Siri_V2alpha_ProfileSliceLabelO_Tg5
++ _$sSh21_nonEmptyArrayLiteralShyxGSayxG_tcfC20SiriInformationTypes10DeviceTypeO_Tt0g5Tf4g_n
+- _$s10Foundation4UUIDVACSeAAWlTm
++ _$s10Foundation4UUIDVACSeAAWlTm
++ _$s21SiriInformationSearch17AMPUserStateUtilsO26createAMPUsersStatesForSAM09mediaUserI010resolution16isPostResolution03muxM4Info11homeMembersSay10PegasusAPI013Apple_Parsec_a12_V2alpha_AmpmE0VGSgSayAA05MediamE0_pG_AJ0x1_y1_a1_z18_ProfileSliceValueqE0OSbSayAA07MUXUserS0VGSay22IntelligenceFlowShared0M0VGtFZALSgAaO_pXEfU_
++ _$s21SiriInformationSearch06PommesC7RequestV19isRemoteTVOSRequestSbvg
+~ _$s21SiriInformationSearch17AMPUserStateUtilsO26createAMPUsersStatesForSAM09mediaUserI010resolution16isPostResolution03muxM4Info11homeMembersSay10PegasusAPI013Apple_Parsec_a12_V2alpha_AmpmE0VGSgSayAA05MediamE0_pG_AJ0x1_y1_a1_z18_ProfileSliceValueqE0OSbSayAA07MUXUserS0VGSay22IntelligenceFlowShared0M0VGtFZTf4nndnnd_n : 1984 -> 1896
+~ _$s21SiriInformationSearch15SAMPegasusProxyC21makeBatchResponseItem4from0aB5Types06PommesgH0V0I0V10PegasusAPI033Apple_Parsec_Sam_V1alpha_SAMBatchcH0V12DomainResultV_tFZ : 1756 -> 1924
+~ _$s21SiriInformationSearch19DataProviderManagerC26addClientExperienceSignals2to3forAA0hiJ0VAH_AA06PommesC7RequestVtF : 3280 -> 3308
+~ _$s10PegasusAPI30Useragentpb_DeviceCapabilitiesV21SiriInformationSearchE4from10deviceTypeAC0fG5Types0dK0O_tFZ : 4 -> 116
+CStrings:
++ "AMP token refresh is not supported on the companion path for remote requests"
++ "AMPUserStateUtils: Filled sharedUserID from homeMembers for alternateDSID %s"
++ "AMPUserStateUtils: homeMembers non-empty but no alternateDSID match for %s"
++ "DataProviderManager: For remote tvOS request, building AMP user states from homeMembers on the client device"
++ "SAMSearchRequestProcessor: AMP token refresh requested on companion for remote request — blocking. Companion must not refresh its own AMP tokens for a client device user."
+```

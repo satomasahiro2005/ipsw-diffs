@@ -1,0 +1,81 @@
+## SiriInformationTypes
+
+> `/System/Library/PrivateFrameworks/SiriInformationTypes.framework/SiriInformationTypes`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e3cc` | `0x4ea84` | **`+0x6b8`** |
+| `__DATA_DIRTY.__bss` | `0x1f00` | `0x2080` | **`+0x180`** |
+| `__TEXT.__const` | `0x48650` | `0x48730` | **`+0xe0`** |
+| `__TEXT.__swift5_typeref` | `0xc46` | `0xc80` | **`+0x3a`** |
+| `__TEXT.__swift5_fieldmd` | `0x11e8` | `0x121c` | **`+0x34`** |
+| `__TEXT.__constg_swiftt` | `0x15e0` | `0x1604` | **`+0x24`** |
+| `__AUTH_CONST.__const` | `0x13e8` | `0x1408` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0xe92` | `0xeb2` | **`+0x20`** |
+| `__DATA.__data` | `0x770` | `0x780` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1208` | `0x1218` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x1dc` | `0x1e8` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0xb60` | `0xb68` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x134` | `0x138` | **`+0x4`** |
+
+### Other Changes
+
+```diff
+
+-3605.24.1.0.0
++3605.24.1.11.2
+
+-  Functions: 1992
+-  Symbols:   5061
++  Functions: 2002
++  Symbols:   5105
+Symbols:
++ _$s10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataVMa
++ _$s10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataVMn
++ _$s10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataVSgML
++ _$s10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataVSgMR
++ _$s10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataVSgMd
++ _$s20SiriInformationTypes10DeviceTypeO10CodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLO11stringValueSSvg
++ _$s20SiriInformationTypes10DeviceTypeO13homeAccessoryyA2CmFWC
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOAFs0H3KeyAAWL
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOAFs0H3KeyAAWl
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOAFs23CustomStringConvertibleAAWL
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOAFs23CustomStringConvertibleAAWl
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOAFs28CustomDebugStringConvertibleAAWL
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOAFs28CustomDebugStringConvertibleAAWl
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOMF
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOMXX
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOMa
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOMf
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOMn
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs0H3KeyAAMc
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs0H3KeyAAMcMK
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs0H3KeyAAs23CustomStringConvertiblePWb
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs0H3KeyAAs28CustomDebugStringConvertiblePWb
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs0H3KeyAAsAGP11stringValueSSvgTW
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs0H3KeyAAsAGP11stringValuexSgSS_tcfCTW
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs0H3KeyAAsAGP8intValueSiSgvgTW
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs0H3KeyAAsAGP8intValuexSgSi_tcfCTW
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs23CustomStringConvertibleAAMc
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs23CustomStringConvertibleAAMcMK
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs23CustomStringConvertibleAAsAGP11descriptionSSvgTW
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs28CustomDebugStringConvertibleAAMc
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs28CustomDebugStringConvertibleAAMcMK
++ _$s20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs28CustomDebugStringConvertibleAAsAGP16debugDescriptionSSvgTW
++ _$s20SiriInformationTypes19PommesBatchResponseV4ItemV7queryID10domainName9succeeded7results6uiView12searchDialog0H8Metadata09multiUserF7Context9appIntent5errorAESS_SSSbSay10PegasusAPI41Apple_Parsec_Sam_V1alpha_SAMPegasusResultVGAP34Apple_Parsec_Sam_V1alpha_SAMUIViewVSgAP034Apple_Parsec_Sam_V1alpha_SAMSearchQ0VSgAP033Apple_Parsec_Sam_V1alpha_SAMQueryR0VSgAP013Apple_Parsec_a14_V2alpha_MultitfU0VSgAP013Apple_Parsec_a9_V2alpha_y3AppW4DataVSgAE0eG5ErrorVSgtcfC
++ _$s20SiriInformationTypes19PommesBatchResponseV4ItemV9appIntent10PegasusAPI013Apple_Parsec_a9_V2alpha_j3AppI4DataVSgvg
++ _$s20SiriInformationTypes19PommesBatchResponseV4ItemV9appIntent10PegasusAPI013Apple_Parsec_a9_V2alpha_j3AppI4DataVSgvpMV
++ _$ss22KeyedDecodingContainerVy20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOGMR
++ _$ss22KeyedDecodingContainerVy20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOGMd
++ _$ss22KeyedEncodingContainerVy20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOGMR
++ _$ss22KeyedEncodingContainerVy20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOGMd
++ _associated conformance 20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs0H3KeyAAs23CustomStringConvertible
++ _associated conformance 20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLOs0H3KeyAAs28CustomDebugStringConvertible
++ _symbolic _____ 20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLO
++ _symbolic _____Sg 10PegasusAPI026Apple_Parsec_Siri_V2alpha_A13AppIntentDataV
++ _symbolic _____y_____G s22KeyedDecodingContainerV 20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLO
++ _symbolic _____y_____G s22KeyedEncodingContainerV 20SiriInformationTypes10DeviceTypeO23HomeAccessoryCodingKeys33_61815D70CA92CF1AD0EFE000FB7FD246LLO
+- _$s20SiriInformationTypes19PommesBatchResponseV4ItemV7queryID10domainName9succeeded7results6uiView12searchDialog0H8Metadata09multiUserF7Context5errorAESS_SSSbSay10PegasusAPI41Apple_Parsec_Sam_V1alpha_SAMPegasusResultVGAO0y1_Z22_Sam_V1alpha_SAMUIViewVSgAO0y1_z22_Sam_V1alpha_SAMSearchQ0VSgAO0y1_z21_Sam_V1alpha_SAMQueryR0VSgAO0y1_z1_a14_V2alpha_MultitfU0VSgAE0eG5ErrorVSgtcfC
+```

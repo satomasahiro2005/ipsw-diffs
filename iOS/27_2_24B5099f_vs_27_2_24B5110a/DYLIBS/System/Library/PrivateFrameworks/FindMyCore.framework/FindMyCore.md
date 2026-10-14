@@ -1,0 +1,238 @@
+## FindMyCore
+
+> `/System/Library/PrivateFrameworks/FindMyCore.framework/FindMyCore`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10c1c4` | `0x11bc90` | **`+0xfacc`** |
+| `__DATA.__bss` | `0x1a410` | `0x1c410` | **`+0x2000`** |
+| `__TEXT.__const` | `0x1165c` | `0x12b0c` | **`+0x14b0`** |
+| `__AUTH_CONST.__const` | `0x8ccd` | `0x9655` | **`+0x988`** |
+| `__TEXT.__eh_frame` | `0x74e4` | `0x7d5c` | **`+0x878`** |
+| `__TEXT.__unwind_info` | `0x4a38` | `0x5088` | **`+0x650`** |
+| `__DATA.__data` | `0x3e10` | `0x4330` | **`+0x520`** |
+| `__TEXT.__swift5_typeref` | `0x49f1` | `0x4e91` | **`+0x4a0`** |
+| `__AUTH.__data` | `0xff0` | `0x13b0` | **`+0x3c0`** |
+| `__TEXT.__constg_swiftt` | `0x2d14` | `0x30d0` | **`+0x3bc`** |
+| `__TEXT.__swift5_reflstr` | `0x27f6` | `0x2b16` | **`+0x320`** |
+| `__TEXT.__swift5_fieldmd` | `0x373c` | `0x3a28` | **`+0x2ec`** |
+| `__AUTH_CONST.__objc_const` | `0xb90` | `0xd88` | **`+0x1f8`** |
+| `__TEXT.__swift5_assocty` | `0x1178` | `0x1338` | **`+0x1c0`** |
+| `__TEXT.__cstring` | `0x3cc8` | `0x3e58` | **`+0x190`** |
+| `__TEXT.__swift5_proto` | `0xe1c` | `0xf1c` | **`+0x100`** |
+| `__DATA_CONST.__const` | `0x270` | `0x368` | **`+0xf8`** |
+| `__TEXT.__swift5_capture` | `0x5c8` | `0x690` | **`+0xc8`** |
+| `__TEXT.__swift_as_cont` | `0x4f8` | `0x5b0` | **`+0xb8`** |
+| `__TEXT.__swift_as_ret` | `0x338` | `0x394` | **`+0x5c`** |
+| `__TEXT.__swift_as_entry` | `0x2f0` | `0x344` | **`+0x54`** |
+| `__AUTH.__objc_data` | `0xb0` | `0x100` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x1a68` | `0x1ab8` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x11e1` | `0x1231` | **`+0x50`** |
+| `__TEXT.__swift5_types` | `0x45c` | `0x4a8` | **`+0x4c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x860` | `0x890` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x58` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xaa0` | `0xab0` | **`+0x10`** |
+
+### Other Changes
+
+```diff
+
+-470.31.6.16.39
++470.31.6.16.46
+
++  - /System/Library/Frameworks/MapKit.framework/MapKit
++  - /System/Library/Frameworks/UIKit.framework/UIKit
+
++  - /usr/lib/swift/libswiftCoreImage.dylib
+
++  - /usr/lib/swift/libswiftSpatial.dylib
+
+-  Functions: 6186
+-  Symbols:   2218
+-  CStrings:  484
++  Functions: 6691
++  Symbols:   2373
++  CStrings:  495
+Symbols:
++ _MKLaunchOptionsDirectionsModeDefault
++ _MKLaunchOptionsDirectionsModeKey
++ _OBJC_CLASS_$_MKMapItem
++ _OBJC_CLASS_$_SPIntentSession
++ _OBJC_CLASS_$_SPIntentSessionContext
++ __DATA__TtC10FindMyCore26TVRemoteIntelligenceModule
++ __DATA__TtCVV10FindMyCore14FindItemIntent12DependenciesP33_25F9D19AFAE9F613AD463EB5A118CBFB21LatestLocationTracker
++ __DATA__TtCVV10FindMyCore16FindPersonIntent12DependenciesP33_FFDD26A5FDB677F98E476320916A7F1E21LatestLocationTracker
++ __IVARS__TtCVV10FindMyCore14FindItemIntent12DependenciesP33_25F9D19AFAE9F613AD463EB5A118CBFB21LatestLocationTracker
++ __IVARS__TtCVV10FindMyCore16FindPersonIntent12DependenciesP33_FFDD26A5FDB677F98E476320916A7F1E21LatestLocationTracker
++ __METACLASS_DATA__TtC10FindMyCore26TVRemoteIntelligenceModule
++ __METACLASS_DATA__TtCVV10FindMyCore14FindItemIntent12DependenciesP33_25F9D19AFAE9F613AD463EB5A118CBFB21LatestLocationTracker
++ __METACLASS_DATA__TtCVV10FindMyCore16FindPersonIntent12DependenciesP33_FFDD26A5FDB677F98E476320916A7F1E21LatestLocationTracker
++ __MKLaunchOptionsFindMyHandleIdentifiersKey
++ __swift_FORCE_LOAD_$_swiftCoreImage
++ __swift_FORCE_LOAD_$_swiftCoreImage_$_FindMyCore
++ __swift_FORCE_LOAD_$_swiftSpatial
++ __swift_FORCE_LOAD_$_swiftSpatial_$_FindMyCore
++ __swift_FORCE_LOAD_$_swiftUIKit
++ __swift_FORCE_LOAD_$_swiftUIKit_$_FindMyCore
++ _associated conformance 10FindMyCore0aB24OpenMapsDirectionsIntentV0eF5ErrorOSHAASQ
++ _associated conformance 10FindMyCore0aB24OpenMapsDirectionsIntentV10AppIntents0hG0AA13PerformResultAdEP_AD0gK0
++ _associated conformance 10FindMyCore0aB24OpenMapsDirectionsIntentV10AppIntents0hG0AA14SummaryContentAdEP_AD09ParameterJ0
++ _associated conformance 10FindMyCore0aB24OpenMapsDirectionsIntentV10AppIntents0hG0AaD09_SupportsH12Dependencies
++ _associated conformance 10FindMyCore0aB24OpenMapsDirectionsIntentV10AppIntents0hG0AaD24PersistentlyIdentifiable
++ _associated conformance 10FindMyCore15StopSoundIntentV10AppIntents0gF0AA13PerformResultAdEP_AD0fJ0
++ _associated conformance 10FindMyCore15StopSoundIntentV10AppIntents0gF0AA14SummaryContentAdEP_AD09ParameterI0
++ _associated conformance 10FindMyCore15StopSoundIntentV10AppIntents0gF0AaD09_SupportsG12Dependencies
++ _associated conformance 10FindMyCore15StopSoundIntentV10AppIntents0gF0AaD24PersistentlyIdentifiable
++ _associated conformance 10FindMyCore15StopSoundIntentV12DependenciesV04PlayE5ErrorOSHAASQ
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0G0V8PriorityOSHAASQ
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0G0VSHAASQ
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents012AttributableI0AaF0jI0
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents01_H5ValueAA0L4TypeAfGP_AfG
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents01_H5ValueAA13SpecificationAfGP_AF08ResolverM0
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents01_H5ValueAA13UnwrappedTypeAfGP_AfG
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents09TransientjI0AaF0jI0
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents0J5ValueAaF01_hL0
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents0J5ValueAaF24PersistentlyIdentifiable
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents0J5ValueAaF24TypeDisplayRepresentable
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AA12DefaultQueryAfGP_AF0iM0
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AA2IDs12IdentifiableP_AF0I21IdentifierConvertible
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AAs12Identifiable
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AaF0J5Value
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AaF20DisplayRepresentable
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents20DisplayRepresentableAaF04TypelM0
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents20DisplayRepresentableAaF08InstancelM0
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV10AppIntents28InstanceDisplayRepresentableAA10Foundation40CustomLocalizedStringResourceConvertible
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityVs12IdentifiableAA2IDsAFP_SH
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV10AppIntents0iH0AA13PerformResultAdEP_AD0hL0
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV10AppIntents0iH0AA14SummaryContentAdEP_AD09ParameterK0
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV10AppIntents0iH0AaD09_SupportsI12Dependencies
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV10AppIntents0iH0AaD24PersistentlyIdentifiable
++ _associated conformance 10FindMyCore35RenewItemLocationSubscriptionIntentV10AppIntents0iH8InternalAaD0iH0
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents012AttributableI0AaF0jI0
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents01_H5ValueAA0L4TypeAfGP_AfG
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents01_H5ValueAA13SpecificationAfGP_AF08ResolverM0
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents01_H5ValueAA13UnwrappedTypeAfGP_AfG
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents09TransientjI0AaF0jI0
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents0J5ValueAaF01_hL0
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents0J5ValueAaF24PersistentlyIdentifiable
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents0J5ValueAaF24TypeDisplayRepresentable
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AA12DefaultQueryAfGP_AF0iM0
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AA2IDs12IdentifiableP_AF0I21IdentifierConvertible
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AAs12Identifiable
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AaF0J5Value
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AaF20DisplayRepresentable
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents20DisplayRepresentableAaF04TypelM0
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents20DisplayRepresentableAaF08InstancelM0
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV10AppIntents28InstanceDisplayRepresentableAA10Foundation40CustomLocalizedStringResourceConvertible
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityVs12IdentifiableAA2IDsAFP_SH
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV10AppIntents0iH0AA13PerformResultAdEP_AD0hL0
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV10AppIntents0iH0AA14SummaryContentAdEP_AD09ParameterK0
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV10AppIntents0iH0AaD09_SupportsI12Dependencies
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV10AppIntents0iH0AaD24PersistentlyIdentifiable
++ _associated conformance 10FindMyCore37RenewDeviceLocationSubscriptionIntentV10AppIntents0iH8InternalAaD0iH0
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents012AttributableI0AaF0jI0
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents01_H5ValueAA0L4TypeAfGP_AfG
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents01_H5ValueAA13SpecificationAfGP_AF08ResolverM0
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents01_H5ValueAA13UnwrappedTypeAfGP_AfG
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents09TransientjI0AaF0jI0
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents0J5ValueAaF01_hL0
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents0J5ValueAaF24PersistentlyIdentifiable
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents0J5ValueAaF24TypeDisplayRepresentable
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AA12DefaultQueryAfGP_AF0iM0
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AA2IDs12IdentifiableP_AF0I21IdentifierConvertible
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AAs12Identifiable
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AaF0J5Value
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents0jI0AaF20DisplayRepresentable
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents20DisplayRepresentableAaF04TypelM0
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents20DisplayRepresentableAaF08InstancelM0
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV10AppIntents28InstanceDisplayRepresentableAA10Foundation40CustomLocalizedStringResourceConvertible
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityVs12IdentifiableAA2IDsAFP_SH
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV10AppIntents0iH0AA13PerformResultAdEP_AD0hL0
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV10AppIntents0iH0AA14SummaryContentAdEP_AD09ParameterK0
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV10AppIntents0iH0AaD09_SupportsI12Dependencies
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV10AppIntents0iH0AaD24PersistentlyIdentifiable
++ _associated conformance 10FindMyCore37RenewPersonLocationSubscriptionIntentV10AppIntents0iH8InternalAaD0iH0
++ _objc_retain_x1
++ _symbolic SS_ypt
++ _symbolic Say_____G 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV
++ _symbolic Say_____G 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV
++ _symbolic Say_____G 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV
++ _symbolic ScCySb_____G s5NeverO
++ _symbolic Shy_____G 10FindMyCore35RenewItemLocationSubscriptionIntentV0G0V
++ _symbolic So15SPIntentSessionC
++ _symbolic _____ 10FindMyCore0A10ItemIntentV12DependenciesV21LatestLocationTracker33_25F9D19AFAE9F613AD463EB5A118CBFBLLC
++ _symbolic _____ 10FindMyCore0A12PersonIntentV12DependenciesV21LatestLocationTracker33_FFDD26A5FDB677F98E476320916A7F1ELLC
++ _symbolic _____ 10FindMyCore0aB24OpenMapsDirectionsIntentV
++ _symbolic _____ 10FindMyCore0aB24OpenMapsDirectionsIntentV0eF5ErrorO
++ _symbolic _____ 10FindMyCore15StopSoundIntentV
++ _symbolic _____ 10FindMyCore15StopSoundIntentV12DependenciesV
++ _symbolic _____ 10FindMyCore15StopSoundIntentV12DependenciesV04PlayE5ErrorO
++ _symbolic _____ 10FindMyCore26TVRemoteIntelligenceModuleC
++ _symbolic _____ 10FindMyCore33ItemsLocationSubscriptionClientIDV
++ _symbolic _____ 10FindMyCore35RenewItemLocationSubscriptionIntentV
++ _symbolic _____ 10FindMyCore35RenewItemLocationSubscriptionIntentV0G0V
++ _symbolic _____ 10FindMyCore35RenewItemLocationSubscriptionIntentV0G0V8PriorityO
++ _symbolic _____ 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV
++ _symbolic _____ 10FindMyCore35RenewItemLocationSubscriptionIntentV12DependenciesV
++ _symbolic _____ 10FindMyCore37RenewDeviceLocationSubscriptionIntentV
++ _symbolic _____ 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV
++ _symbolic _____ 10FindMyCore37RenewPersonLocationSubscriptionIntentV
++ _symbolic _____ 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV
++ _symbolic _____ 10FindMyCore37RenewPersonLocationSubscriptionIntentV12DependenciesV
++ _symbolic _____Sg 10AppIntents12UserIdentityV
++ _symbolic _____ySS_yptG s23_ContiguousArrayStorageC
++ _symbolic _____ySSypG s18_DictionaryStorageC
++ _symbolic _____ySay_____GG 10AppIntents15IntentParameterC 10FindMyCore029RenewItemLocationSubscriptionC0V0ijK6EntityV
++ _symbolic _____ySay_____GG 10AppIntents15IntentParameterC 10FindMyCore031RenewDeviceLocationSubscriptionC0V0ijK6EntityV
++ _symbolic _____ySay_____GG 10AppIntents15IntentParameterC 10FindMyCore031RenewPersonLocationSubscriptionC0V0ijK6EntityV
++ _symbolic _____y_____G 10AppIntents010_TransientA11EntityQueryV 10FindMyCore35RenewItemLocationSubscriptionIntentV0jklD0V
++ _symbolic _____y_____G 10AppIntents010_TransientA11EntityQueryV 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0jklD0V
++ _symbolic _____y_____G 10AppIntents010_TransientA11EntityQueryV 10FindMyCore37RenewPersonLocationSubscriptionIntentV0jklD0V
++ _symbolic _____y_____G 10AppIntents26EmptyResolverSpecificationV 10FindMyCore35RenewItemLocationSubscriptionIntentV0jkL6EntityV
++ _symbolic _____y_____G 10AppIntents26EmptyResolverSpecificationV 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0jkL6EntityV
++ _symbolic _____y_____G 10AppIntents26EmptyResolverSpecificationV 10FindMyCore37RenewPersonLocationSubscriptionIntentV0jkL6EntityV
++ _symbolic _____y_____G s11_SetStorageC 10FindMyCore26PersonLocationSubscriptionV
++ _symbolic _____y_____G s11_SetStorageC 10FindMyCore35RenewItemLocationSubscriptionIntentV0I0V
++ _symbolic _____y_____G s23_ContiguousArrayStorageC 10FindMyCore35RenewItemLocationSubscriptionIntentV0J0V
++ _symbolic _____y______Qo_ 10AppIntents0A6IntentPAAE16parameterSummaryQrvpZQO 10FindMyCore029RenewItemLocationSubscriptionC0V
++ _symbolic _____y______Qo_ 10AppIntents0A6IntentPAAE16parameterSummaryQrvpZQO 10FindMyCore031RenewDeviceLocationSubscriptionC0V
++ _symbolic _____y______Qo_ 10AppIntents0A6IntentPAAE16parameterSummaryQrvpZQO 10FindMyCore031RenewPersonLocationSubscriptionC0V
++ _symbolic _____y______Qo_ 10AppIntents0A6IntentPAAE16parameterSummaryQrvpZQO 10FindMyCore09StopSoundC0V
++ _symbolic _____y______Qo_ 10AppIntents0A6IntentPAAE16parameterSummaryQrvpZQO 10FindMyCore0fg18OpenMapsDirectionsC0V
++ _symbolic yShy_____G______tYaYbKc 10FindMyCore26PersonLocationSubscriptionV 10AppIntents19IntentSystemContextV
++ _symbolic yShy_____G______tYaYbKc 10FindMyCore35RenewItemLocationSubscriptionIntentV0G0V 10AppIntents0H13SystemContextV
++ _symbolic y_____YaYbKc 10FindMyCore9ItemModelV16UniqueIdentifierV
++ _type_layout_string 10FindMyCore0aB24OpenMapsDirectionsIntentV
++ _type_layout_string 10FindMyCore15StopSoundIntentV
++ _type_layout_string 10FindMyCore15StopSoundIntentV12DependenciesV
++ _type_layout_string 10FindMyCore33ItemsLocationSubscriptionClientIDV
++ _type_layout_string 10FindMyCore35RenewItemLocationSubscriptionIntentV0G0V
++ _type_layout_string 10FindMyCore35RenewItemLocationSubscriptionIntentV0efG6EntityV
++ _type_layout_string 10FindMyCore35RenewItemLocationSubscriptionIntentV12DependenciesV
++ _type_layout_string 10FindMyCore37RenewDeviceLocationSubscriptionIntentV0efG6EntityV
++ _type_layout_string 10FindMyCore37RenewPersonLocationSubscriptionIntentV0efG6EntityV
++ _type_layout_string 10FindMyCore37RenewPersonLocationSubscriptionIntentV12DependenciesV
+- _symbolic Say_____G 10AppIntents22ConfirmationConditionsV
+- _symbolic _____Sg 10AppIntents19IntentSystemContextV6SourceO
+- _symbolic _____Sg_ABt 10AppIntents19IntentSystemContextV6SourceO
+CStrings:
++ "OPEN_MAPS_DIRECTIONS_INTENT_DESC"
++ "OPEN_MAPS_DIRECTIONS_INTENT_TITLE"
++ "RENEW_PERSONLOCATION_INTENT_DESC"
++ "RENEW_PERSONLOCATION_INTENT_TITLE"
++ "RenewDeviceLocationSubscriptionIntent.Subscription"
++ "RenewDeviceLocationSubscriptionIntent: %s - %s"
++ "RenewItemLocationSubscriptionIntent.Subscription"
++ "RenewItemLocationSubscriptionIntent: %s - %s"
++ "RenewPersonLocationSubscriptionIntent.Subscription"
++ "RenewPersonLocationSubscriptionIntent: %s - %s"
++ "STOPSOUND_INTENT_DESC"
++ "STOPSOUND_INTENT_TITLE"
++ "_createCheckedContinuation(_:)"
++ "unique"
+- "DEVICE_PLAYSOUND_INTENT_SAFETY_ALERT_MESSAGE"
+- "DEVICE_PLAYSOUND_INTENT_SAFETY_ALERT_TITLE"
+- "FindPersonIntent: returning the newer of the two locations."
+```

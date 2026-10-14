@@ -1,0 +1,197 @@
+## MusicEngagementExtension
+
+> `/System/Library/ExtensionKit/Extensions/MusicEngagementExtension.appex/MusicEngagementExtension`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e18f8` | `0x4e2354` | **`+0xa5c`** |
+| `__DATA.__data` | `0x17518` | `0x17668` | **`+0x150`** |
+| `__TEXT.__cstring` | `0xbf54` | `0xbec4` | **`-0x90`** |
+| `__DATA.__bss` | `0x2a8f0` | `0x2a970` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x10828` | `0x108a0` | **`+0x78`** |
+| `__DATA_CONST.__got` | `0x36e0` | `0x3730` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x32320` | `0x322f8` | **`-0x28`** |
+| `__TEXT.__const` | `0x2a938` | `0x2a948` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_doubleobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
+```diff
+
+-4026.210.24.1.0
++4026.210.3.0.0
+
+-  Functions: 23913
+-  Symbols:   61083
+-  CStrings:  5233
++  Functions: 23943
++  Symbols:   61141
++  CStrings:  5231
+Symbols:
++ _$s12CoreGraphics7CGFloatV05MediaA2UI22ApproximatelyEquatableADMc
++ _$s12CoreGraphics7CGFloatVAC05MediaA2UI22ApproximatelyEquatableADWL
++ _$s12CoreGraphics7CGFloatVAC05MediaA2UI22ApproximatelyEquatableADWl
++ _$s7SwiftUI10TapGestureVAA0D0AAMc
++ _$s7SwiftUI10TapGestureVAcA0D0AAWL
++ _$s7SwiftUI10TapGestureVAcA0D0AAWlTm
++ _$s7SwiftUI12_FrameLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI12_FrameLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI12_FrameLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI12_ScaleEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI12_ScaleEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI12_ScaleEffectVAcA12ViewModifierAAWl
++ _$s7SwiftUI12_ScaleEffectVN
++ _$s7SwiftUI13_OffsetEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI13_OffsetEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI13_OffsetEffectVAcA12ViewModifierAAWl
++ _$s7SwiftUI13_OffsetEffectVN
++ _$s7SwiftUI13_ShadowEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI13_ShadowEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI13_ShadowEffectVAcA12ViewModifierAAWl
++ _$s7SwiftUI14LinearGradientVAA10ShapeStyleAAMc
++ _$s7SwiftUI14LinearGradientVAcA10ShapeStyleAAWL
++ _$s7SwiftUI14LinearGradientVAcA10ShapeStyleAAWl
++ _$s7SwiftUI14_OpacityEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI14_OpacityEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI14_OpacityEffectVAcA12ViewModifierAAWl
++ _$s7SwiftUI14_OpacityEffectVN
++ _$s7SwiftUI14_PaddingLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI14_PaddingLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI14_PaddingLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI14_PaddingLayoutVN
++ _$s7SwiftUI15ModifiedContentVyAA14LinearGradientVAA12_FrameLayoutVGACyxq_GAA4ViewA2aJRzAA0I8ModifierR_rlWlTm
++ _$s7SwiftUI15ModifiedContentVyAA4TextVAA16_FixedSizeLayoutVGACyxq_GAA4ViewA2aJRzAA0I8ModifierR_rlWl
++ _$s7SwiftUI15ModifiedContentVyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGACyxq_GAA4ViewA2aNRzAA0kI0R_rlWlTm
++ _$s7SwiftUI15ModifiedContentVyACyAA12ViewThatFitsVyAA05TupleD0VyAA6VStackVyAGyAIyAGyACyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA0J9AlignmentOGG_AQQPGG_AA6SpacerVAA5ImageVAuA0E0PAAE11buttonStyleyQrqd__AA015PrimitiveButtonS0Rd__lFQOyAA0U0VyACyACyAkA14_PaddingLayoutVGAA010_FlexFrameW0VGG_AA017BorderedProminentuS0VQo_QPGG_AIyAGyAS_AuCyA11_A3_GQPGGAIyAGyAA06ScrollE0VyASG_AUA14_QPGGQPGGA3_GA3_GACyxq_GAax2aXRzAA0eN0R_rlWlTm
++ _$s7SwiftUI15ModifiedContentVyACyAA6ButtonVyAA012_ConditionalD0VyACyAA12ProgressViewVyAA05EmptyH0VAKGAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGACyAA4TextVAA16_FlexFrameLayoutVGGGAA01_jk9TransformM0VySbGGAWGACyxq_GAA0H0A2AA5_RzAA0hM0R_rlWl
++ _$s7SwiftUI15ModifiedContentVyACyAA6HStackVyAA05TupleD0VyAA012_ConditionalD0VyACyACyACyAA5ImageVAA12_FrameLayoutVGAA11_ClipEffectVyAA6CircleVGGAA08_PaddingJ0VGACyACyACyAA4ViewP018_MusicKitInternal_aB0E22artworkLoadingObserveryQry0pQ07ArtworkVSg_So6CGSizeVA2_AZE0T6StatusOtcFQOy01_pq1_aB00vH0VAZE0S11PlaceholderyQrxA3__A5_AA5ColorVtcAaXRzlFQOy_0p4CoreB0015CNSwiftUIAvatarO0VQo__Qo_AMGASGAVGG_AIyAA4TextVACyAA6ButtonVyA24_GAA30_EnvironmentKeyWritingModifierVyA13_SgGGGAA6SpacerVACyACyACyA27_AVGA29_ySiSgGGAA21_TraitWritingModifierVyAA0J16PriorityTraitKeyVGGSgQPGGAA24_BackgroundStyleModifierVyA13_GGAA05_FlexiJ0VGACyxq_GAax2aXRzAA0O8ModifierR_rlWlTm
++ _$s7SwiftUI15ModifiedContentVyACyACyACyAA6ButtonVyAA012_ConditionalD0VyACyAA12ProgressViewVyAA05EmptyH0VAKGAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGACyAA4TextVAA16_FlexFrameLayoutVGGGAA01_jk9TransformM0VySbGGAWGARGAWGACyxq_GAA0H0A2AA7_RzAA0hM0R_rlWl
++ _$s7SwiftUI16_BlendModeEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI16_BlendModeEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI16_BlendModeEffectVAcA12ViewModifierAAWlTm
++ _$s7SwiftUI16_FixedSizeLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI16_FixedSizeLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI16_FixedSizeLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI16_FlexFrameLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI16_FlexFrameLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI16_FlexFrameLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI16_FlexFrameLayoutVN
++ _$s7SwiftUI22HierarchicalShapeStyleVAA0dE0AAMc
++ _$s7SwiftUI22HierarchicalShapeStyleVAcA0dE0AAWL
++ _$s7SwiftUI22HierarchicalShapeStyleVAcA0dE0AAWl
++ _$s7SwiftUI23_CompositingGroupEffectVAA12ViewModifierAAMc
++ _$s7SwiftUI23_CompositingGroupEffectVAcA12ViewModifierAAWL
++ _$s7SwiftUI23_CompositingGroupEffectVAcA12ViewModifierAAWl
++ _$s7SwiftUI25_AlignmentWritingModifierVAA04ViewE0AAMc
++ _$s7SwiftUI25_AlignmentWritingModifierVAcA04ViewE0AAWL
++ _$s7SwiftUI25_AlignmentWritingModifierVAcA04ViewE0AAWl
++ _$s7SwiftUI25_AlignmentWritingModifierVN
++ _$s7SwiftUI25_AppearanceActionModifierVAA04ViewE0AAMc
++ _$s7SwiftUI25_AppearanceActionModifierVAcA04ViewE0AAWL
++ _$s7SwiftUI25_AppearanceActionModifierVAcA04ViewE0AAWl
++ _$s7SwiftUI30_SafeAreaRegionsIgnoringLayoutVAA12ViewModifierAAMc
++ _$s7SwiftUI30_SafeAreaRegionsIgnoringLayoutVAcA12ViewModifierAAWL
++ _$s7SwiftUI30_SafeAreaRegionsIgnoringLayoutVAcA12ViewModifierAAWl
++ _$s7SwiftUI30_SafeAreaRegionsIgnoringLayoutVN
++ _$s7SwiftUI4TextVAA4ViewAAMc
++ _$s7SwiftUI4TextVAcA4ViewAAWL
++ _$s7SwiftUI4TextVAcA4ViewAAWl
++ _$s7SwiftUI5ColorVAA10ShapeStyleAAMc
++ _$s7SwiftUI5ColorVAA4ViewAAMc
++ _$s7SwiftUI5ColorVAcA10ShapeStyleAAWL
++ _$s7SwiftUI5ColorVAcA10ShapeStyleAAWl
++ _$s7SwiftUI5ColorVAcA4ViewAAWL
++ _$s7SwiftUI5ColorVAcA4ViewAAWl
++ _$s7SwiftUI5ImageVAA4ViewAAMc
++ _$s7SwiftUI5ImageVAcA4ViewAAWL
++ _$s7SwiftUI5ImageVAcA4ViewAAWl
++ _$s7SwiftUI6SpacerVAA4ViewAAMc
++ _$s7SwiftUI6SpacerVAcA4ViewAAWL
++ _$s7SwiftUI6SpacerVAcA4ViewAAWl
++ _$s7SwiftUI6SpacerVN
++ _$s7SwiftUI9EmptyViewV09MusicCoreB021FontTextStyleProviderADMcMK
++ _$s7SwiftUI9EmptyViewV09MusicCoreB021FontTextStyleProviderADWI
++ _$s7SwiftUI9EmptyViewVAA0D0AAMc
++ _$s7SwiftUI9EmptyViewVAcA0D0AAWL
++ _$s7SwiftUI9EmptyViewVAcA0D0AAWl
++ _$sS2d7SwiftUI10AnimatableAAWL
++ _$sS2d7SwiftUI10AnimatableAAWl
++ _$sS2d7SwiftUI16VectorArithmeticAAWL
++ _$sS2d7SwiftUI16VectorArithmeticAAWl
++ _$sSd7SwiftUI10AnimatableAAMc
++ _$sSd7SwiftUI16VectorArithmeticAAMc
++ _$sSo10CGColorRefaAB14CoreFoundation9_CFObjectSCWlTm
++ _$ss5NeverO7SwiftUI4ViewACMc
++ _$ss5NeverOAB7SwiftUI4ViewACWL
++ _$ss5NeverOAB7SwiftUI4ViewACWl
+- _$s11MusicCoreUI10NoticeViewV7Content33_1E0EE3996FA6F48DA9B8EAD4E8F15418LLVAF05SwiftC00E0AAWlTm
+- _$s12CoreGraphics7CGFloatV05MediaA2UI22ApproximatelyEquatableADWP
+- _$s7SwiftUI10TapGestureVAA0D0AAWP
+- _$s7SwiftUI12_FrameLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI12_ScaleEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI13_OffsetEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI13_ShadowEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI14LinearGradientVAA10ShapeStyleAAWP
+- _$s7SwiftUI14_OpacityEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI14_PaddingLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI15ModifiedContentVyAA4TextVAA14_PaddingLayoutVGACyxq_GAA4ViewA2aJRzAA0H8ModifierR_rlWl
+- _$s7SwiftUI15ModifiedContentVyAA4TextVAA16_FlexFrameLayoutVGACyxq_GAA4ViewA2aJRzAA0I8ModifierR_rlWlTm
+- _$s7SwiftUI15ModifiedContentVyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGACyxq_GAA4ViewA2aNRzAA0kI0R_rlWl
+- _$s7SwiftUI15ModifiedContentVyACyAA014_ViewModifier_D0Vy09MusicCoreB004GlowF0VGAA11_ClipEffectVyAA16RoundedRectangleVGGAA12_FrameLayoutVGACyxq_GAA0E0A2aTRzAA0eF0R_rlWlTm
+- _$s7SwiftUI15ModifiedContentVyACyAA12ViewThatFitsVyAA05TupleD0VyAA6VStackVyAGyAIyAGyACyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA0J9AlignmentOGG_AQQPGG_AA6SpacerVAA5ImageVAuA0E0PAAE11buttonStyleyQrqd__AA015PrimitiveButtonS0Rd__lFQOyAA0U0VyACyACyAkA14_PaddingLayoutVGAA010_FlexFrameW0VGG_AA017BorderedProminentuS0VQo_QPGG_AIyAGyAS_AuCyA11_A3_GQPGGAIyAGyAA06ScrollE0VyASG_AUA14_QPGGQPGGA3_GA3_GACyxq_GAax2aXRzAA0eN0R_rlWl
+- _$s7SwiftUI15ModifiedContentVyACyACyAA6ButtonVyAA012_ConditionalD0VyACyAA12ProgressViewVyAA05EmptyH0VAKGAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGACyAA4TextVAA16_FlexFrameLayoutVGGGAA01_jk9TransformM0VySbGGAWGARGACyxq_GAA0H0A2AA6_RzAA0hM0R_rlWl
+- _$s7SwiftUI15ModifiedContentVyACyACyAA6HStackVyAA05TupleD0VyAA012_ConditionalD0VyACyACyACyAA5ImageVAA12_FrameLayoutVGAA11_ClipEffectVyAA6CircleVGGAA08_PaddingJ0VGACyACyACyAA4ViewP018_MusicKitInternal_aB0E22artworkLoadingObserveryQry0pQ07ArtworkVSg_So6CGSizeVA2_AZE0T6StatusOtcFQOy01_pq1_aB00vH0VAZE0S11PlaceholderyQrxA3__A5_AA5ColorVtcAaXRzlFQOy_0p4CoreB0015CNSwiftUIAvatarO0VQo__Qo_AMGASGAVGG_AIyAA4TextVACyAA6ButtonVyA24_GAA30_EnvironmentKeyWritingModifierVyA13_SgGGGAA6SpacerVACyACyACyA27_AVGA29_ySiSgGGAA21_TraitWritingModifierVyAA0J16PriorityTraitKeyVGGSgQPGGAA24_BackgroundStyleModifierVyA13_GGAA05_FlexiJ0VGA54_GACyxq_GAax2aXRzAA0O8ModifierR_rlWlTm
+- _$s7SwiftUI15ModifiedContentVyACyACyACyAA6ButtonVyAA012_ConditionalD0VyACyAA12ProgressViewVyAA05EmptyH0VAKGAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGACyAA4TextVAA16_FlexFrameLayoutVGGGAA01_jk9TransformM0VySbGGAWGARGAWGACyxq_GAA0H0A2AA7_RzAA0hM0R_rlWlTm
+- _$s7SwiftUI16_BlendModeEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI16_FixedSizeLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI16_FlexFrameLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI22HierarchicalShapeStyleVAA0dE0AAWP
+- _$s7SwiftUI23_CompositingGroupEffectVAA12ViewModifierAAWP
+- _$s7SwiftUI24ButtonStyleConfigurationV5LabelVAeA4ViewAAWlTm
+- _$s7SwiftUI25_AlignmentWritingModifierVAA04ViewE0AAWP
+- _$s7SwiftUI25_AppearanceActionModifierVAA04ViewE0AAWP
+- _$s7SwiftUI30_SafeAreaRegionsIgnoringLayoutVAA12ViewModifierAAWP
+- _$s7SwiftUI4TextVAA4ViewAAWP
+- _$s7SwiftUI5ColorVAA10ShapeStyleAAWP
+- _$s7SwiftUI5ColorVAA4ViewAAWP
+- _$s7SwiftUI5ImageVAA4ViewAAWP
+- _$s7SwiftUI6SpacerVAA4ViewAAWP
+- _$s7SwiftUI9EmptyViewVAA0D0AAWP
+- _$sSd7SwiftUI10AnimatableAAWP
+- _$sSd7SwiftUI16VectorArithmeticAAWP
+- _$sSo10CGColorRefaAB14CoreFoundation9_CFObjectSCWl
+- _$sSo7UIColorC11MusicCoreUIE0B4TintO6normalABvpZfiABSo17UITraitCollectionCcfU_
+- _$ss5NeverO7SwiftUI4ViewACWP
+CStrings:
+- "Dynamic Color Trait: Unhandled combination of `UIUserInterfaceStyle` and `UIAccessibilityContrast`"
+- "MusicCoreUI/TintColor.swift"
+```

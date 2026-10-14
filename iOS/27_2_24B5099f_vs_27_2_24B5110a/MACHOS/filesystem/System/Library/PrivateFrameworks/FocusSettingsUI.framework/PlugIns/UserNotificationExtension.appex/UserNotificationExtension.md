@@ -1,0 +1,15 @@
+## UserNotificationExtension
+
+> `/System/Library/PrivateFrameworks/FocusSettingsUI.framework/PlugIns/UserNotificationExtension.appex/UserNotificationExtension`
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-511.2.6.0.0
++511.2.7.0.0
+```
