@@ -1,0 +1,22 @@
+## NetworkServiceProxy
+
+> `/System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x67310` | `0x67320` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x6c8` | `0x6d0` | **`+0x8`** |
+
+### Other Changes
+
+```diff
+
+-  Symbols:   3446
++  Symbols:   3447
+Symbols:
++ _os_variant_has_internal_content
+Functions:
+~ -[NSPConfiguration configServerHost] : 88 -> 104
+```

@@ -1,0 +1,15 @@
+## com.apple.UIKit.ShareUI
+
+> `/System/Library/Frameworks/UIKit.framework/PlugIns/com.apple.UIKit.ShareUI.appex/com.apple.UIKit.ShareUI`
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-9127.1.13.1.106
++9127.1.13.1.110
+```
