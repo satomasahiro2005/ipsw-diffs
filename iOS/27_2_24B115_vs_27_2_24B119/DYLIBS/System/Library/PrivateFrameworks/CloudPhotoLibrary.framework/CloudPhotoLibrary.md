@@ -1,0 +1,18 @@
+## CloudPhotoLibrary
+
+> `/System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/CloudPhotoLibrary`
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
+
+-916.57.153.0.0
++916.57.154.0.0
+CStrings:
++ "CloudPhotoLibrary-916.57.154"
+- "CloudPhotoLibrary-916.57.153"
+```

@@ -680,6 +680,7 @@
 <details open>
   <summary>View diffs</summary>
 
+- [27.2 RC (24B115) .vs 27.2 (24B119)](iOS/27_2_24B115_vs_27_2_24B119/README.md)
 - [27.2 beta 4 (24B5110a) .vs 27.2 RC (24B115)](iOS/27_2_24B5110a_vs_27_2_24B115/README.md)
 
 </details>
